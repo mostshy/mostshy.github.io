@@ -77,7 +77,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="多校,链表," />
+  <meta name="keywords" content=",," />
 
 
 
@@ -95,9 +95,9 @@
 
 <meta name="description" content="或许这就是弱渣吧，全世界的都会的题就我不会——链表">
 <meta name="keywords" content="多校,链表">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <meta property="og:title" content="HDU 6058">
-<meta property="og:url" content="http://yoursite.com/2017/08/02/HDU-6058/index.html">
+<meta property="og:url" content="http://yoursite.com/HDU-6058.html">
 <meta property="og:site_name" content="mostshy&#39;Blog">
 <meta property="og:description" content="或许这就是弱渣吧，全世界的都会的题就我不会——链表">
 <meta property="og:locale" content="zh-Hans">
@@ -132,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/08/02/HDU-6058/"/>
+  <link rel="canonical" href="http://yoursite.com/HDU-6058.html"/>
 
 
 
@@ -268,102 +268,17 @@
             
 
   <div id="posts" class="posts-expand">
-    
+  <header class="post-header">
 
-  
+	<h1 class="post-title" itemprop="name headline">HDU 6058</h1>
 
-  
-  
-  
 
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/08/02/HDU-6058/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="mostshy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="mostshy'Blog">
-    </span>
+</header>
 
     
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">HDU 6058</h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-02T01:49:20+08:00">
-                2017-08-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ACM/" itemprop="url" rel="index">
-                    <span itemprop="name">ACM</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
     
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p><blockquote class="blockquote-center"><h2>或许这就是弱渣吧，全世界的都会的题就我不会——链表</h2></blockquote><br><a id="more"></a></p>
+      <p><blockquote class="blockquote-center"><h2>或许这就是弱渣吧，全世界的都会的题就我不会——链表</h2></blockquote><br><a id="more"></a></p>
 <blockquote>
 <h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>求全排列所有区间的第k大的权值和，不存在第k大权值为0.</p>
 <ul>
@@ -377,73 +292,7 @@
 </ul>
 </blockquote>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3> <figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;cstdio&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;algorithm&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;vector&gt;</span></span></div><div class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</div><div class="line"><span class="keyword">typedef</span> <span class="keyword">long</span> <span class="keyword">long</span> ll;</div><div class="line"><span class="meta">#<span class="meta-keyword">define</span> maxn 500010</span></div><div class="line"><span class="function"><span class="keyword">bool</span> <span class="title">scan_d</span><span class="params">(<span class="keyword">int</span> &amp;ret)</span> </span>&#123;</div><div class="line">    <span class="keyword">char</span> c;</div><div class="line">    <span class="keyword">int</span> sgn;</div><div class="line">    <span class="keyword">if</span>(c=getchar(),c==EOF) <span class="keyword">return</span> <span class="number">0</span>; <span class="comment">//EOF</span></div><div class="line">    <span class="keyword">while</span>(c!=<span class="string">'-'</span>&amp;&amp;(c&lt;<span class="string">'0'</span>||c&gt;<span class="string">'9'</span>)) c=getchar();</div><div class="line">    sgn=(c==<span class="string">'-'</span>)?<span class="number">-1</span>:<span class="number">1</span>;</div><div class="line">    ret=(c==<span class="string">'-'</span>)?<span class="number">0</span>:(c-<span class="string">'0'</span>);</div><div class="line">    <span class="keyword">while</span>(c=getchar(),c&gt;=<span class="string">'0'</span>&amp;&amp;c&lt;=<span class="string">'9'</span>) ret=ret*<span class="number">10</span>+(c-<span class="string">'0'</span>);</div><div class="line">    ret*=sgn;</div><div class="line">    <span class="keyword">return</span> <span class="number">1</span>;</div><div class="line">&#125;</div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">node</span> &#123;</span></div><div class="line">    <span class="keyword">int</span> x;</div><div class="line">    node *left,*right;</div><div class="line">    node() &#123;&#125;</div><div class="line">    node(<span class="keyword">int</span> x,node *left,node *right):x(x),left(left),right(right) &#123;&#125;</div><div class="line">&#125;;</div><div class="line"><span class="keyword">int</span> A[maxn];</div><div class="line">node *root;</div><div class="line">node *pos[maxn];</div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">(<span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">    node *p=root=<span class="keyword">new</span> node();</div><div class="line">    A[n+<span class="number">1</span>]=n+<span class="number">1</span>;</div><div class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;=n+<span class="number">1</span>; i++) &#123;</div><div class="line">        node *t=<span class="keyword">new</span> node(i,p,<span class="literal">NULL</span>);</div><div class="line">        p-&gt;right=t;</div><div class="line">        pos[A[i]]=p=t;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"><span class="keyword">int</span> t[<span class="number">250</span>];</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</div><div class="line">    <span class="keyword">int</span> ca;</div><div class="line">    <span class="built_in">scanf</span>(<span class="string">"%d"</span>,&amp;ca);</div><div class="line">    <span class="keyword">while</span>(ca--) &#123;</div><div class="line">        <span class="keyword">int</span> n,k;</div><div class="line">        scan_d(n);</div><div class="line">        scan_d(k);</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++)</div><div class="line">            scan_d(A[i]);</div><div class="line">        init(n);</div><div class="line">        ll ans=<span class="number">0</span>;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;=n; i++) &#123;</div><div class="line">            node *p=pos[i];</div><div class="line">            <span class="keyword">int</span> cnt=k,len=<span class="number">0</span>;</div><div class="line">            <span class="keyword">while</span>(cnt--) &#123;</div><div class="line">                p=p-&gt;left;</div><div class="line">                <span class="keyword">if</span>(p-&gt;x==<span class="number">0</span>) <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">            <span class="keyword">if</span>(cnt==<span class="number">-1</span>) cnt=<span class="number">0</span>;</div><div class="line">            cnt=k-cnt+<span class="number">1</span>;</div><div class="line">            <span class="keyword">while</span>(cnt--) &#123;</div><div class="line">                t[len++]=p-&gt;x;</div><div class="line">                p=p-&gt;right;</div><div class="line">            &#125;</div><div class="line">            cnt=k;</div><div class="line">            <span class="keyword">while</span>(cnt--) &#123;</div><div class="line">                t[len++]=p-&gt;x;</div><div class="line">                p=p-&gt;right;</div><div class="line">                <span class="keyword">if</span>(!p) <span class="keyword">break</span>;</div><div class="line">            &#125;</div><div class="line">            p=pos[i];</div><div class="line">            p-&gt;left-&gt;right=p-&gt;right;</div><div class="line">            p-&gt;right-&gt;left=p-&gt;left;</div><div class="line">            <span class="keyword">delete</span> p;</div><div class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>; j&lt;len; j++) &#123;</div><div class="line">                <span class="keyword">if</span>(j+k&gt;=len) <span class="keyword">break</span>;</div><div class="line">                ans+=(ll)i*(t[j]-t[j<span class="number">-1</span>])*(t[j+k]-t[j+k<span class="number">-1</span>]);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="built_in">printf</span>(<span class="string">"%lld\n"</span>,ans);</div><div class="line">        <span class="keyword">while</span>(root) &#123;</div><div class="line">            node *p=root;</div><div class="line">            root=root-&gt;right;</div><div class="line">            <span class="keyword">delete</span> p;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/多校/" rel="tag"># 多校</a>
-          
-            <a href="/tags/链表/" rel="tag"># 链表</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/08/02/hdu-6059/" rel="prev" title="hdu 6059">
-                hdu 6059 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
+    
   </div>
 
 
@@ -686,10 +535,10 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
 
-
+  
 
   
 
